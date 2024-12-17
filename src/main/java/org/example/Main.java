@@ -3,6 +3,7 @@ package org.example;
 import classes.Animal;
 import classes.Cat;
 import classes.Dog;
+import enums.ListeColors;
 import interfaces.IBloc;
 
 import java.util.Arrays;
@@ -22,7 +23,8 @@ public class Main {
        // blocNew.setHeight(12);
         ///System.out.println(blocNew.getHeight());
         // class is abstract, so it represent model not instantiable
-        BlocNew blocNew1=new Mur(10,12,13,true);
+        BlocNew blocNew1=new Mur(10,12,13,true, ListeColors.RED);
+
         blocNew1.afficherDescription();
         ////BlocNew blocNew2=new BlocNew();
         ///blocNew2.afficherDescription();
@@ -100,6 +102,7 @@ Une instance d’une classe mère ne peut pas être typée par une classe fille.
 //        else
 //            System.out.println("wrong operator");
 //Main.displayMajVoy();
+
     }
 
 

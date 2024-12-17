@@ -1,11 +1,14 @@
 package org.example;
 
+import enums.ListeColors;
+
 public class Mur extends BlocNew{
     private boolean porteur;
-
-    public Mur(final int with, final int height, final int length, final boolean porteur) {
+    private ListeColors listeColors;
+    public Mur(final int with, final int height, final int length, final boolean porteur, final ListeColors listeColors) {
         super(with, height, length);
         this.porteur = porteur;
+        this.listeColors=listeColors;
     }
 public Mur(){
         super();
@@ -24,6 +27,6 @@ public Mur(){
 
     @Override
     public void afficherDescription() {
-        System.out.println("Je suis un mur");
+        System.out.println("Je suis un mur "+listeColors);
     }
 }
